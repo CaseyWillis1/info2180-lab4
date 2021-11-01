@@ -1,1 +1,93 @@
+/* ID#: 620132112
+Name: Casey Willis */
 
+body{
+    font-family: sans-serif;
+    background-color: 	#f0f0f0;
+}
+
+.container{
+    text-align: center;
+    color: white;
+    background-color: steelblue;
+    padding: 10px;
+    margin-bottom: 10px;
+    font-family: sans-serif,;
+}
+h2{
+    margin-left: 190px;
+    font-size: 15px;
+    margin-top: 20px;
+}
+p{
+    margin-left: 150px;
+    font-size: 15px;
+    font-weight: 100;
+}
+
+h3{
+    margin-left: 150px;
+    font-size: 25px;
+    text-transform: uppercase;
+    margin-top: 50px;
+    font-weight: 700;
+    margin-bottom: 0px;
+}
+
+h4{
+    margin-left: 150px;
+    font-size: 15px;
+    text-transform: uppercase;
+    margin-top: 0;
+}
+h5{
+    margin-left: 190px;
+    margin-top: 50px;
+    margin-bottom: 20px;
+    font-size: 30px;
+    font-weight: 700; 
+      
+}
+
+h6{
+    margin-top: 10px;
+    margin-left: 150px;
+    font-size: 15px;
+    color: red;
+    font-weight:700;
+    font-size: 20px;
+}
+
+li{
+    margin-left: 200px;
+    font-size: 15px;
+}
+
+#but{
+    background-color: red;
+    color:white;
+    height: 35px;
+    width: 80px;
+    border-radius: 5px;
+    border: none;
+    
+    
+}
+
+#search{
+    width: 700px;
+    height: 30px;
+    border-radius: 5px;
+    margin-left: 190px;
+    border: none;
+    
+     
+}
+
+hr { 
+    border-top: 3px solid gray;
+    width: 900px;
+    margin-left: 190px;
+  
+    
+}

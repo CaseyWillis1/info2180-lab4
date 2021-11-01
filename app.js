@@ -1,4 +1,5 @@
-// hp request object
+//ID#: 620132112
+//Name: Casey Willis
 
 
 "use strict";
@@ -12,24 +13,25 @@ document.addEventListener('DOMContentLoaded', () =>{
   function search(){
 
   let xhr = new XMLHttpRequest();
-  document.getElementById("result").innerHTML = "";
-  xhr.open('GET',"superheroes.php",true);
-  xhr.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
-  xhr.onreadystatechange = function(){
-    if(xhr.readyState === XMLHttpRequest.DONE){  
-      alert(xhr.response);
-        
-     
-      
+  
+  let search = sanitizeString(document.getElementById('search').value);
+    
+    xhr.open('GET',`superheroes.php?query=${search}`);
+    xhr.onreadystatechange = function(){
+      if(xhr.readyState == 4){
+        if(xhr.status == 200){ 
+          document.getElementById("result").innerHTML = xhr.responseText; 
+        }
+      }
     }
-  }
-  xhr.send();
+    xhr.send();
 
- 
   }
 
-
- 
+  function sanitizeString(str) {
+    str = str.replace(/[^a-z0-9áéíóúñü \.,_-]/gim, " ");
+    return str.trim();
+}
  
 });
 
